@@ -3,6 +3,11 @@ package usta.sistemas;
 import java.util.Scanner;
 
 public class Main {
+       /*
+      Name: Harrizon Alexander Soler Galindo
+      Date: 15/04/2020
+      Description: This software calculates the average height of 5 children).
+    */
 
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
