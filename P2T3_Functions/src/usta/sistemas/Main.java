@@ -25,7 +25,7 @@ public class Main {
         System.out.println("Select an option:\n1.Area of a Circle\n2.Area of a Triangle\n3.Area of a Square");
         op = keyboard.nextByte();
 
-        f_error_op(op);
+        op = f_error_op(op);
 
         switch (op) {
             case 1:
