@@ -19,7 +19,7 @@ public class Main {
         System.out.println("Type the word to convert (min 5 letters):");
         input = keyboard.nextLine();
 
-        f_error(input);
+        input = f_error(input);
 
         System.out.println("The fist char of "+ input +" is " + f_irst_char(input));
         System.out.println(input + " to uppercase is " + f_Uppercase(input));
