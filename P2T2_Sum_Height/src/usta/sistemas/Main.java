@@ -17,7 +17,7 @@ public class Main {
            System.out.println("Write the height of the children " + i);
            heights[i-1] = keyboard.nextDouble();
 
-           f_error(heights[i-1]);
+           heights[i-1] = f_error(heights[i-1]);
 
            acum += heights[i-1];
         }
