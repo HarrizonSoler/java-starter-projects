@@ -19,7 +19,7 @@ public class Main {
         System.out.println("Type an option:\n1.Seconds to Hours-Minutes and Seconds\n2.Hours to Seconds\n3.Minutes to Seconds");
         option = keyboard.nextByte();
 
-        f_error_list(option);
+        option = f_error_list(option);
 
         switch (option) {
             case 1:
@@ -49,7 +49,7 @@ public class Main {
         System.out.println("Input the " + kind[type-1] + " to convert:");
         input = keyboard.nextDouble();
 
-        f_error(input);
+        input = f_error(input);
 
         System.out.print(input + kind[type-1] + " to seconds is ");
 
@@ -72,7 +72,7 @@ public class Main {
         System.out.println("Type the seconds to convert:");
         secondsInput = keyboard.nextDouble();
 
-        f_error(secondsInput);
+        secondsInput = f_error(secondsInput);
 
         hours = secondsInput / 3600;
         minutes = Math.round(thenDot(hours) * 60);
