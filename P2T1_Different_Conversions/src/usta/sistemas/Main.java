@@ -33,7 +33,7 @@ public class Main {
                            "(Celcius = 1 ; Farenheit = 2 ; Kelvin = 3):");
         temp = keyboard.nextInt();
 
-        f_error(temp,3);
+        temp = f_error(temp,3);
 
         return temp;
     }
