@@ -54,7 +54,7 @@ public class Main {
         System.out.println("Type the" + kind[direction-1] + " to convert:");
         input = keyboard.nextDouble();
 
-        input = f_error(input);
+        input = f_error(input,direction);
 
         System.out.print(input);
 
@@ -75,7 +75,7 @@ public class Main {
         System.out.println("Type the" + kind[direction-1] + " to convert:");
         input = keyboard.nextDouble();
 
-        input = f_error(input);
+        input = f_error(input,direction);
 
         System.out.print(input);
 
@@ -96,7 +96,7 @@ public class Main {
         System.out.println("Type the" + kind[direction-1] + " to convert:");
         input = keyboard.nextDouble();
 
-        input = f_error(input);
+        input = f_error(input,2);
 
         System.out.print(input);
 
@@ -109,10 +109,17 @@ public class Main {
                 break;
         }
     }
-    public static double f_error(double input){
+    public static double f_error(double input,int kind){
         Scanner keyboard = new Scanner(System.in);
 
-        while (input < 0){
+        switch (kind){
+            case 1: kind = 1000;
+            break;
+            case 2: kind = 10;
+            break;
+        }
+
+        while (input < kind){
             System.err.println("ERROR, The input must be greater than 0\nRetry:");
             input = keyboard.nextDouble();
         }
