@@ -15,6 +15,8 @@ public class Main {
         int Ncicles,Nchildren = 0;
         double height,acum = 0;
 
+        f_menu();
+
         System.out.println("Type the number of children to calculates the average height:");
         Ncicles = keyboard.nextInt();
 
@@ -37,5 +39,11 @@ public class Main {
         }
 
         System.out.println("The average height of " + Nchildren + " children is " + (acum/Nchildren) + " mts");
+    }
+    public static void f_menu(){
+        System.out.println("----------------------");
+        System.out.println("|     Heightsoft     |");
+        System.out.println("| By: Harrizon Soler |");
+        System.out.println("----------------------");
     }
 }
