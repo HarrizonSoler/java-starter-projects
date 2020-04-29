@@ -11,6 +11,8 @@ public class Main {
     */
 
     public static void main(String[] args) {
+        f_menu();
+
         int stops = f_stops(),passengers[] ,pin = 0,pout = 0;
 
         for (int i = 1; i <= stops; i++){
@@ -23,6 +25,12 @@ public class Main {
         System.out.println("A total of " + pin + " passengers entered and " + pout + " passengers left the Bus with " + stops + " stops");
         System.out.println(pin*150 + " dollars were obtained");
 
+    }
+    public static void f_menu(){
+        System.out.println("----------------------");
+        System.out.println("|      Busoft        |");
+        System.out.println("| By: Harrizon Soler |");
+        System.out.println("----------------------");
     }
     public static int f_stops(){
         Scanner keyboard = new Scanner(System.in);
