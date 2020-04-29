@@ -4,6 +4,12 @@ import java.util.Scanner;
 
 public class Main {
 
+    /*
+      Name: Harrizon Alexander Soler Galindo
+      Date: 19/04/2020
+      Description: This software simulates a bus route.
+    */
+
     public static void main(String[] args) {
         int stops = f_stops(),passengers[] ,pin = 0,pout = 0;
 
