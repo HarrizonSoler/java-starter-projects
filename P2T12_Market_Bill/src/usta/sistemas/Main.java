@@ -4,6 +4,12 @@ import java.util.Scanner;
 
 public class Main {
 
+    /*
+      Name: Harrizon Alexander Soler Galindo
+      Date: 29/04/2020
+      Description: This software calculate the value of N products.
+    */
+
     public static void main(String[] args) {
         f_menu();
 
