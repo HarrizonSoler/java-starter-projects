@@ -25,7 +25,7 @@ public class Main {
             System.out.println("           ║ By: Harrizon Soler ║");
             System.out.println("           ╚════════════════════╝\n");
 
-            System.out.println("Type the number of persons to calculate:");
+            System.out.println("Type the number of values to calculate:");
             values = keyboard.nextInt();
 
             while (values <= 0){
@@ -53,7 +53,7 @@ public class Main {
 
             for (int i = 0; i < values.length; i++){
                 System.out.println("Number " + (i+1) + " is: " + values[i]);
-                
+
                 if (values[i] < smallestNumber || i == 0){
                     smallestNumber = values[i];
                 }
